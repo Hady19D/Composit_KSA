@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<title>Scope</title>
+	<script type="text/javascript" src="assets/js/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.touchSwipe.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/animation.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/animator.css" />
+	<script type="text/JavaScript" src="assets/js/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/2.css" />
+	<script type="text/javascript" src="assets/js/pages/2.js"></script>
+	<script type="text/javascript" src="assets/js/pages/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="assets/js/menus.js"></script>
+	<script type="text/javascript" src="assets/js/veeva-library.js"></script>
+	<script type="text/javascript" src="assets/js/call-clickstream.js"></script>
+
+</head>
+
+<body style="margin: 0; padding: 0;" ontouchstart="if(!canZoom)event.preventDefault();">
+	<div class="slides-container">
+		<div id="page2" class="page">
+
+			<img src="assets/img/p2/pic1.png" class="pic1">
+			<img src="assets/img/p2/pic2.png" class="pic2 zoomIn animated">
+			<img src="assets/img/p2/pic4.png" class="pic4">
+			<img src="assets/img/p2/pic5.png" class="pic5">
+			<img src="assets/img/p2/pic6.png" class="pic6">
+			<img src="assets/img/p2/pic7.png" class="pic7">
+			<img src="assets/img/p2/bg2.png" class="bg2">
+			<img src="assets/img/p2/bg3.png" class="bg3">
+			<img src="assets/img/p2/bg4.png" class="bg4">
+			<img src="assets/img/p2/bg5.png" class="bg5">
+			<img src="assets/img/p2/pic13.png" class="pic13">
+			<img src="assets/img/p2/pic14.png" class="pic14">
+			<img src="assets/img/p2/pic15.png" class="pic15">
+			<img src="assets/img/p2/pic16.png" class="pic16 fadeInLeft animated">
+			<img src="assets/img/p2/title1.png" class="title1">
+			<img src="assets/img/p2/pic17.png" class="pic17 fadeInLeftBig animated">
+			<img src="assets/img/p2/pic18.png" class="pic18">
+			<img src="assets/img/p2/pic19.png" class="pic19">
+			<img src="assets/img/p2/pic20.png" class="pic20">
+			<img src="assets/img/p2/ref.png" class="ref1">
+			<div class="blackscreen"></div>
+			<div class="nextdiv"></div>
+			<div class="nextdiv2"></div>
+			<div class="nextdiv3"></div>
+
+			<div class="homediv ppp"></div>
+			<div class="ssidiv ppp"></div>
+
+			<img src="assets/img/p2/click.png" class="next">
+			<img src="assets/img/p2/click.png" class="next1">
+			<img src="assets/img/p2/click.png" class="next2">
+			<img src="assets/img/p2/click.png" class="next3">
+			<img src="assets/img/p2/click.png" class="next4">
+			<img src="assets/img/p2/click.png" class="next5">
+			<img src="assets/img/p2/click.png" class="next6">
+			<img src="assets/img/p2/click.png" class="next7">
+
+		</div>
+	</div>
+</div>
+
+
+<div class="nav-menu-cover"></div>
+
+<script type="application/javascript">
+	var handleMove = function (e) {
+		if (!$(e.target).parents().andSelf().hasClass('scroll')) {
+			e.preventDefault();
+		}
+	};
+	document.addEventListener('touchmove', handleMove, true);
+
+	function view_nav() {
+		if ($('.navigation-menu').css('display') == 'none')
+			$('.navigation-menu').fadeIn();
+		else
+			$('.navigation-menu').fadeOut();
+	}
+
+
+	$(document).ready(function () {
+
+	});
+
+</script>
+</body>
+
+</html>
